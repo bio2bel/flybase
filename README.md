@@ -1,2 +1,0 @@
-# flybase
-FlyBase to BEL
