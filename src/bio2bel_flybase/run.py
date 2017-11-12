@@ -5,10 +5,11 @@ from __future__ import print_function
 import logging
 
 import pandas as pd
-from pybel_tools.definition_utils import write_namespace
-from pybel_tools.resources import get_today_arty_namespace, deploy_namespace
 
-from bio2bel_flybase.contants import url
+from pybel.resources.arty import get_today_arty_namespace
+from pybel.resources.definitions import write_namespace
+from pybel.resources.deploy import deploy_namespace
+from .constants import url
 
 log = logging.getLogger(__name__)
 
