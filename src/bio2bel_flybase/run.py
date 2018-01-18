@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
 import logging
 
 import pandas as pd
-
 from pybel.resources.arty import get_today_arty_namespace
 from pybel.resources.definitions import write_namespace
 from pybel.resources.deploy import deploy_namespace
+
 from .constants import url
 
 log = logging.getLogger(__name__)

@@ -1,18 +1,16 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
 import logging
 import sys
 
 import click
 
-from bio2bel_flybase.run import write_belns, deploy_to_arty
+from .run import deploy_to_arty, write_belns
 
 
 @click.group()
 def main():
-    """Reactome to BEL"""
+    """FlyBase to BEL"""
     logging.basicConfig(level=10, format="%(asctime)s - %(levelname)s - %(message)s")
 
 
