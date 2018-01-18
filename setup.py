@@ -22,8 +22,9 @@ CLASSIFIERS = [
     'Topic :: Scientific/Engineering :: Bio-Informatics'
 ]
 INSTALL_REQUIRES = [
-    'pybel_tools',
+    'click',
     'pandas',
+    'pybel[deployment]',
 ]
 ENTRY_POINTS = {
     'bio2bel': [

@@ -5,7 +5,7 @@ import sys
 
 import click
 
-from .run import deploy_to_arty, write_belns
+from .to_belns import deploy_to_arty, write_belns
 
 
 @click.group()
