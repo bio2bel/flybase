@@ -24,7 +24,7 @@ CLASSIFIERS = [
 INSTALL_REQUIRES = [
     'click',
     'pandas',
-    'pybel[deployment]',
+    'pybel',
 ]
 ENTRY_POINTS = {
     'bio2bel': [
