@@ -6,7 +6,7 @@ import re
 
 import setuptools
 
-BIO2BEL_MODULE = 'flybase'
+BIO2BEL_MODULE = 'fb'
 PACKAGES = setuptools.find_packages(where='src')
 META_PATH = os.path.join('src', 'bio2bel_{}'.format(BIO2BEL_MODULE), '__init__.py')
 KEYWORDS = ['Biological Expression Language', 'BEL', 'Systems Biology', 'Networks Biology']
@@ -25,6 +25,7 @@ INSTALL_REQUIRES = [
     'click',
     'pandas',
     'pybel',
+    'bio2bel',
 ]
 ENTRY_POINTS = {
     'bio2bel': [
