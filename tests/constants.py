@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+"""Testing constants for Bio2BEL FlyBase."""
+
 import logging
 import os
 

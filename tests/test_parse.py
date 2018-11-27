@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+"""Tests for Bio2BEL FlyBase."""
+
 import unittest
 
 import pandas as pd
@@ -9,6 +11,9 @@ from tests.constants import TEST_FILE
 
 
 class TestStuff(unittest.TestCase):
+    """Tests for the FlyBase parsers."""
+
     def test_parser(self):
+        """Test getting the mapping dataframe."""
         df = get_mapping_df(path=TEST_FILE)
         self.assertIsInstance(df, pd.DataFrame)

@@ -17,7 +17,6 @@ class FlyGene(Base):  # type: ignore
     """Gene table."""
 
     __tablename__ = FLY_GENE_TABLE_NAME
-
     id = Column(Integer, primary_key=True)
 
     flybase_id = Column(String(255), nullable=False, index=True)
@@ -34,7 +33,7 @@ class FlyGene(Base):  # type: ignore
     def serialize_to_protein_node(self) -> pybel.dsl.Gene:
         """Serialize to PyBEL node data dictionary."""
         return pybel.dsl.Gene(
-            namespace='flybase',
+            namespace=MODULE_NAME,
             name=self.symbol,
             identifier=str(self.flybase_id)
         )

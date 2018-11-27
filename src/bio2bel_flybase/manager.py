@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+"""Manager for FlyBase."""
+
 from typing import Mapping, Optional
 
 from bio2bel import AbstractManager
@@ -16,7 +20,7 @@ class Manager(AbstractManager, BELNamespaceManagerMixin):
 
     namespace_model = FlyGene
     identifiers_recommended = 'FlyBase'
-    identifiers_pattern = '^FB\w{2}\d{7}$'
+    identifiers_pattern = r'^FB\w{2}\d{7}$'
     identifiers_miriam = 'MIR:00000030'
     identifiers_namespace = 'fb'
     identifiers_url = 'http://identifiers.org/fb/'

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+"""Parsers for FlyBase."""
+
 from bio2bel.downloading import make_df_getter
 from .constants import GENE_MAPPING_PATH, GENE_MAPPING_URL
 
