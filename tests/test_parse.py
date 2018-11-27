@@ -15,5 +15,5 @@ class TestStuff(unittest.TestCase):
 
     def test_parser(self):
         """Test getting the mapping dataframe."""
-        df = get_mapping_df(path=TEST_FILE)
+        df = get_mapping_df(TEST_FILE)
         self.assertIsInstance(df, pd.DataFrame)
