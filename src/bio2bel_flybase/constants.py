@@ -12,7 +12,7 @@ MODULE_NAME = 'fb'
 DATA_DIR = get_data_dir(MODULE_NAME)
 
 BASE_URL = 'ftp://ftp.flybase.net/releases/current/precomputed_files/genes'
-DATE = '2018_05'
+DATE = '2019_01'
 
 GENE_MAPPING_FNAME = f'gene_map_table_fb_{DATE}.tsv.gz'
 
