@@ -13,7 +13,7 @@ from .parser import get_mapping_df
 
 
 class Manager(AbstractManager, BELNamespaceManagerMixin):
-    """Manager for FlyBase."""
+    """Drosophila gene nomenclature and orthologies."""
 
     _base = Base
     module_name = MODULE_NAME
